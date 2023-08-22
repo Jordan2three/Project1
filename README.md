@@ -113,4 +113,5 @@ console.log(groceryList);
 groceryList.unshift('popcorn'); // 'popcorn' should now be index 0 in the groceryList array, and 'bananas' is now index 1
 console.log(groceryList);
 
+
 // Use .slice() to provide a partial output of the array 'bananas', 'coffee beans', 'brown rice'
