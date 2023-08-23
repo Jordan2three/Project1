@@ -115,3 +115,89 @@ console.log(groceryList);
 
 
 // Use .slice() to provide a partial output of the array 'bananas', 'coffee beans', 'brown rice'
+
+
+// Concept - Loops
+
+vacationSpots = ['QLD', 'NSW', 'SA'];
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
+// a tedious task without implementing loops
+
+// Loops are used to repeat a set of instructions or block of code
+
+// iterator variable; stopping condition; iterator statement
+
+/* iterator variable is given it's value, the stopping condition (boolean) is evaluated against the iterator variable, the iterator statement is updated against the iterator variable on each loop
+*/
+
+//For example
+
+for(let counter = 5; counter < 11; counter++) {
+  console.log(counter);
+}
+/* Output
+    5
+    6
+    7
+    8
+    9
+    10
+*/
+
+
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+}
+
+
+/* for is the command that initialise a loop
+let is the declaration of the variable
+counter is the variable name, in this case the counter is assigned (=) the integer 3. This section of the code in a loop is known as the iterator variable.
+
+The next set of texts is the Stopping Conditions. Here we see that this results in a boolean value. The counter variable is using a comparison operator >= (more than or equal to) to the value 0
+
+The last set of text is known as the iterator statement. counter-- uses the variable counter then decreases it's value by 1.
+
+Overall the variable counter is assigned the value 3. Then counter is checked to see if it's value is greater than or equal to 0. In this case, the boolean is true. So now the iterator statement executes, which now changes the value of 3 to now 2.
+Because this is initialised with the  for  operator, it automatically loops the code until the boolean value becomes false, then ceases to operate.
+*/
+
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+for (let i = 0; // Create a variable and assign it a value
+
+i < vacationSpots.length; // Create a boolean expression. You ideally want this to be true, then loop until it becomes false
+
+i++) // What do you want your code to repeat until the boolean value becomes false
+
+{
+  console.log(`I would love to visit ${vacationSpots[i]}`) // What you are printing to the console, and use interpolation to have access to the arrays in the previous code
+  // Here we are using interpolation to insert vacationSpots (Bali, Paris, Tulum) but also referencing it's index values to loop the text but ends at each index. Then creates a new line of text with the same string but referencing another index.
+}
+
+// A Loop running inside a loop is known as a nested loop. Nested loops are generally used to compare the elements in two arrays.
+// For each round of the outer  for  loop, the inner  for  loop will run completely.
+// Example
+const myArray = [6, 19, 20];
+const yourArray = [19, 81, 2];
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < yourArray.length; j++) {
+    if (myArray[i] === yourArray[j]) {
+      console.log('Both arrays have the number: ' + yourArray[j]);
+    }
+  }
+}
+
+const bobsFollowers = [ 'Jake', 'Amber', 'Zack', 'Tim' ];
+const tinasFollowers = [ 'Chloe', 'Jake', 'Zack' ];
+const mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++ ) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+}
+
+console.log(mutualFollowers) //prints [ 'Jake', 'Zack']
