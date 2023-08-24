@@ -201,3 +201,40 @@ for (let i = 0; i < bobsFollowers.length; i++ ) {
 }
 
 console.log(mutualFollowers) //prints [ 'Jake', 'Zack']
+
+
+
+// while loops
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+
+let currentCard = 'heart'
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard)
+}
+
+// do while statements
+
+let cupsOfSugarNeeded = 3
+let cupsAdded = 0
+
+do {
+  cupsAdded++
+ console.log(cupsAdded + ' cups were added') 
+}
+  while (cupsAdded < cupsOfSugarNeeded);
+
+
+// break keyword
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i])
+if (rapperArray[i] === 'Notorious B.I.G.') {
+  break
+  }
+}
+console.log("And if you don't know, now you know.")
