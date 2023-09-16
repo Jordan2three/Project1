@@ -1,4 +1,4 @@
-# Project1
+# Project1/notes
 // Just started learning to code, using this project to practice and as a reference point
 
 
